@@ -35,6 +35,10 @@ body {
 .footer-tel {
   text-decoration: none;
 }
+/* Контейнеры */
+.container {
+  margin: 0;
+}
 /* Хедер */
 
 .nav-pages:hover {
