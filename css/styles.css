@@ -304,9 +304,13 @@ p {
   margin: 0;
 }
 
+.team-container {
+  padding-bottom: 30px;
+  text-align: center;
+}
+
 .team-name {
-  display: flex;
-  justify-content: center;
+  text-align: center;
   margin-bottom: 10px;
   font-size: 16px;
   min-width: 137px;
@@ -314,13 +318,8 @@ p {
   font-weight: 500;
 }
 .team-name-proffesion {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 30px;
+  text-align: center;
   font-size: 16px;
-}
-
-.team-foto {
 }
 
 /* Футер */
