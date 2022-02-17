@@ -29,6 +29,11 @@ p {
   padding: 0;
 }
 
+.section {
+  padding: 94px 0;
+  outline: 2px solid tomato;
+}
+
 /* Точки списков */
 .priorities-list,
 .examples-list,
@@ -164,9 +169,9 @@ p {
   background-color: #2f303a;
 }
 
-.container-hero {
-  padding-top: 200px;
-  /* padding-bottom: 280px; */
+.container.hero-container {
+  padding-top: 106px;
+  padding-bottom: 186px;
 }
 
 .hero-title {
@@ -185,7 +190,7 @@ p {
   display: inline-block;
   min-width: 200px;
   padding: 10px 32px;
-  margin-bottom: 210px;
+  /* margin-bottom: 210px; */
   border: 0;
   border-radius: 4px;
   color: var(--primary-white-color);
@@ -211,9 +216,9 @@ p {
   background-color: var(--background-color);
 }
 
-.priorities {
+/* .priorities {
   padding-top: 94px;
-}
+} */
 
 .priorities-container {
   display: flex;
@@ -230,8 +235,7 @@ p {
 .title {
   margin-bottom: 50px;
   padding-left: 397px;
-  padding-right: 450px;
-  text-align: center;
+  padding-right: 397px;
   font-size: 36px;
   color: var(--title-text-color);
   font-weight: 700;
@@ -260,20 +264,27 @@ p {
 
 /* Наши работы */
 
-.examples {
+/* .examples {
   padding-top: 94px;
   padding-bottom: 94px;
-}
+} */
 
 .examples-list {
   display: flex;
 }
 
 .examples-item {
+  margin-right: 30px;
+  justify-items: center;
+}
+
+.examples-item:last-child {
+  margin: 0%;
 }
 
 /* Наша команда */
 .team {
+  /* padding-top: 94px; */
   background-color: var(--background-button-color);
 }
 .title {
@@ -282,21 +293,37 @@ p {
   margin-bottom: 30px;
 }
 .team-item {
-  padding-bottom: 94px;
 }
 .team-list {
   display: flex;
 }
+.team-item {
+  margin-right: 30px;
+}
+
+.team-item:last-child {
+  margin: 0;
+}
+
 .team-name {
+  display: flex;
+  justify-content: center;
   margin-bottom: 10px;
   font-size: 16px;
+  min-width: 137px;
   color: var(--title-text-color);
   font-weight: 500;
 }
 .team-name-proffesion {
+  display: flex;
+  justify-content: center;
   margin-bottom: 30px;
   font-size: 16px;
 }
+
+.team-foto {
+}
+
 /* Футер */
 .footer {
   font-style: normal;
