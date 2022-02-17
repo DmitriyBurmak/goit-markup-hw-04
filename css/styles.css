@@ -31,7 +31,6 @@ p {
 
 .section {
   padding: 94px 0;
-  outline: 2px solid tomato;
 }
 
 /* Точки списков */
@@ -72,7 +71,7 @@ p {
 
 .container.header {
   display: flex;
-  /* border-bottom: 1px solid #ececec; */
+  border-bottom: 1px solid #ececec;
 }
 
 .nav {
@@ -373,11 +372,15 @@ p {
 }
 
 .hero-filter {
-  padding-top: 94px;
   margin-bottom: 50px;
 }
 .hero-item {
   display: inline-block;
+  margin-right: 8px;
+}
+
+.hero-item:last-child {
+  max-resolution: 0;
 }
 
 .hero-filter-button {
@@ -421,7 +424,7 @@ p {
   display: inline-block;
   margin-left: 30px;
   margin-bottom: 30px;
-  flex-basis: calc((100%-90) / 3);
+  flex-basis: calc(100% / 3 - 30px);
 }
 .link-list-img {
   display: inline-block;
@@ -439,6 +442,8 @@ p {
 .name-filter {
   margin-bottom: 20px;
   text-align: left;
+  font-size: 16px;
+  line-height: 1.88em;
   color: var(--primary-text-color);
 }
 .current {
