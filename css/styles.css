@@ -288,9 +288,9 @@ p {
 }
 .title {
 }
-.team-foto {
+/* .team-foto {
   margin-bottom: 30px;
-}
+} */
 .team-item {
 }
 .team-list {
@@ -305,8 +305,11 @@ p {
 }
 
 .team-container {
+  padding-top: 30px;
   padding-bottom: 30px;
+  border-radius: 0px 0px 4px 4px;
   text-align: center;
+  background-color: var(--primary-white-color);
 }
 
 .team-name {
@@ -427,8 +430,15 @@ p {
 }
 .link-list-img {
   display: inline-block;
-  margin-bottom: 20px;
 }
+
+.name-container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 1px solid #eeeeee;
+  background-color: var(--primary-white-color);
+}
+
 .name-project {
   margin-bottom: 4px;
   text-align: left;
@@ -439,7 +449,6 @@ p {
   letter-spacing: 0.06em;
 }
 .name-filter {
-  margin-bottom: 20px;
   text-align: left;
   font-size: 16px;
   line-height: 1.88em;
