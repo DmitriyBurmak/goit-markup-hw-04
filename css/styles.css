@@ -164,14 +164,16 @@ p {
 
 /* Герой */
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   text-align: center;
   background-color: #2f303a;
 }
 
-.container.hero-container {
+/* .container.hero-container {
   padding-top: 106px;
   padding-bottom: 186px;
-}
+} */
 
 .hero-title {
   width: 696px;
@@ -212,12 +214,13 @@ p {
 /* Наши приоритеты */
 .priorities,
 .examples {
-  background-color: var(--background-color);
+  /* background-color: var(--background-color); */
 }
 
-/* .priorities {
+.priorities {
   padding-top: 94px;
-} */
+  padding-bottom: 0;
+}
 
 .priorities-container {
   display: flex;
@@ -327,14 +330,20 @@ p {
 
 /* Футер */
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   font-style: normal;
   background-color: #2f303a;
 }
 .nav-logo-footer {
-  margin-top: 60px;
+  /* margin-top: 60px; */
   margin-bottom: 20px;
 }
+.nav-logo-half-footer {
+  color: var(--primary-white-color);
+}
 .address {
+  color: var(--primary-white-color);
   margin-bottom: 9px;
   line-height: 1.71;
 }
@@ -348,9 +357,9 @@ p {
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
 }
-.footer-tel {
+/* .footer-tel {
   margin-bottom: 60px;
-}
+} */
 .footer-link:hover {
   color: var(--accent-color);
 }
