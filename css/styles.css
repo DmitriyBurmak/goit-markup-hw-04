@@ -379,7 +379,7 @@ p {
 /* Герой */
 .hero-portfolio {
   text-align: center;
-  background-color: var(--background-color);
+  /* background-color: var(--background-color); */
 }
 
 .hero-filter {
@@ -426,24 +426,26 @@ p {
 }
 
 .portfolio-list {
-  margin-left: -30px;
   display: flex;
   flex-wrap: wrap;
+  margin: -15px;
 }
 
-.link-list {
-  display: inline-block;
-  margin-left: 30px;
-  margin-bottom: 30px;
-  flex-basis: calc(100% / 3 - 30px);
+.portfolio-item {
+  display: flex;
+  margin: 15px;
+  width: 370px;
 }
+
+/* .portfolio-item:nth-child(1) {
+  margin-left: 0;
+} */
 .link-list-img {
   display: inline-block;
 }
 
 .name-container {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 24px;
   border: 1px solid #eeeeee;
   background-color: var(--primary-white-color);
 }
