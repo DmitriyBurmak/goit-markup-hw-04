@@ -442,7 +442,7 @@ p {
   margin-left: 0;
 } */
 .link-list-img {
-  display: inline-block;
+  display: block;
 }
 
 .name-container {
