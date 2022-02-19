@@ -288,13 +288,11 @@ p {
   /* padding-top: 94px; */
   background-color: var(--background-button-color);
 }
-.title {
-}
+
 /* .team-foto {
   margin-bottom: 30px;
 } */
-.team-item {
-}
+
 .team-list {
   display: flex;
 }
@@ -325,6 +323,10 @@ p {
 .team-name-proffesion {
   text-align: center;
   font-size: 16px;
+}
+
+.team-foto {
+  display: block;
 }
 
 /* Футер */
