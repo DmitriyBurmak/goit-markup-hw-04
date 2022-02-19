@@ -9,7 +9,7 @@
 }
 body {
   color: var(--primary-text-color);
-  background-color: var(--background-color);
+  /* background-color: var(--background-color); */
   font-family: roboto, sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -65,9 +65,9 @@ p {
 }
 
 /* Хедер */
-.header {
+/* .header {
   background-color: var(--primary-white-color);
-}
+} */
 
 .container.header {
   display: flex;
@@ -236,8 +236,7 @@ p {
 
 .title {
   margin-bottom: 50px;
-  padding-left: 397px;
-  padding-right: 397px;
+  text-align: center;
   font-size: 36px;
   color: var(--title-text-color);
   font-weight: 700;
