@@ -40,7 +40,8 @@ p {
 .hero-filter,
 .portfolio-list,
 .contacts,
-.nav-list {
+.nav-list,
+.team-icon-list {
   list-style: none;
 }
 
@@ -251,10 +252,45 @@ p {
 }
 
 .priorities-item {
+  max-width: 270px;
   margin-right: 30px;
 }
 .priorities-item:last-child {
   margin: 0;
+}
+
+.icon {
+  display: block;
+  text-align: center;
+  margin-bottom: 30px;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  /* outline: 2px solid tomato; */
+}
+
+.icon-item {
+  height: 120px;
+}
+.icon-clock::before {
+  background-image: url(../img/svg/clock.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-diagram::before {
+  background-image: url(../img/svg/diagram.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-astronaut::before {
+  background-image: url(../img/svg/astronaut.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .title-descripction {
@@ -323,6 +359,7 @@ p {
 .team-name-proffesion {
   text-align: center;
   font-size: 16px;
+  margin-bottom: 16px;
 }
 
 .team-foto {
