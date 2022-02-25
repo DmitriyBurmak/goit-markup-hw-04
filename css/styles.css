@@ -73,6 +73,7 @@ p {
 
 .container.header {
   display: flex;
+
   border-bottom: 1px solid #ececec;
 }
 
@@ -120,16 +121,28 @@ p {
   margin: 32px 0;
 }
 
-.nav-pages {
+.nav-item:not(:last-child) {
   margin-right: 50px;
+}
+
+.nav-pages {
   color: var(--title-text-color);
   letter-spacing: 0.02em;
   font-weight: 500;
 }
 
+.nav-pages:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts {
+  display: flex;
+}
+
 .contacts .contacts-item {
   display: flex;
   align-items: center;
+  margin-left: 301px;
 }
 
 .contacts .contacts-list:not(:last-child) {
