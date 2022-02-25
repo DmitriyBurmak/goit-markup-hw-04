@@ -6,6 +6,7 @@
   --background-color: #e5e5e5;
   --buton-hover-color: #188ce8;
   --background-button-color: #f5f4fa;
+  --background-social-links-color: #afb1b8;
 }
 body {
   color: var(--primary-text-color);
@@ -39,7 +40,7 @@ p {
 .team-list,
 .hero-filter,
 .portfolio-list,
-.contacts,
+.contacts-item,
 .nav-list,
 .team-icon-list {
   list-style: none;
@@ -126,9 +127,31 @@ p {
   font-weight: 500;
 }
 
-.contacts {
+.contacts .contacts-item {
   display: flex;
-  margin-left: 281px;
+  align-items: center;
+}
+
+.contacts .contacts-list:not(:last-child) {
+  margin-right: 30px;
+}
+
+.contacts .link {
+  display: flex;
+  align-items: center;
+  color: var(--primary-text-color);
+}
+
+.contacts .link:hover,
+.contacts .link:focus {
+  color: var(--accent-color);
+}
+.contacts .contacts-icon {
+  fill: currentColor;
+}
+
+.contacts-icon {
+  margin-right: 10px;
 }
 
 .link,
@@ -138,10 +161,6 @@ p {
   color: var(--primary-text-color);
   letter-spacing: 0.02em;
   font-weight: 500;
-}
-
-.link {
-  margin-right: 50px;
 }
 
 .nav-logo {
@@ -213,10 +232,6 @@ p {
   color: var(--primary-white-color);
 }
 /* Наши приоритеты */
-.priorities,
-.examples {
-  /* background-color: var(--background-color); */
-}
 
 .priorities {
   padding-top: 94px;
@@ -316,7 +331,7 @@ p {
 }
 
 .examples-item:last-child {
-  margin: 0%;
+  margin: 0;
 }
 
 /* Наша команда */
@@ -361,9 +376,47 @@ p {
   font-size: 16px;
   margin-bottom: 16px;
 }
-
 .team-foto {
   display: block;
+}
+
+.team-name-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-icon-list {
+  width: 44px;
+  height: 44px;
+}
+
+.team-icon-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.team-icon-list:last-child {
+  margin: 0;
+}
+
+.team-icon-link:hover .socials-icon,
+.team-icon-link:focus .socials-icon {
+  fill: var(--primary-white-color);
+}
+
+.team-icon-link:hover,
+.team-icon-link:focus {
+  background-color: var(--accent-color);
+}
+
+.socials-icon {
+  fill: var(--background-social-links-color);
 }
 
 /* Футер */
@@ -429,7 +482,7 @@ p {
 }
 
 .hero-item:last-child {
-  max-resolution: 0;
+  margin: 0;
 }
 
 .hero-filter-button {
