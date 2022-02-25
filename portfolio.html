@@ -14,22 +14,32 @@
         <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header class="header">
-        <div class="container header">
-            <nav class="nav">
-                <a class="nav-logo" href="">Web<span class="nav-logo-half">Studio</span>
-                </a>
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="./index.html" class="nav-pages">Студия</a></li>
-                    <li class="nav-item"><a href="./portfolio.html" class="current nav-pages">Портфолио</a></li>
-                    <li class="nav-item"><a href="" class="nav-pages">Контакты</a></li>
-                </ul>
-            </nav>
-            <ul class="contacts">
-                <li><a class="link" href="mailto:info@devstudio.com" >info@devstudio.com</a></li>
-                <li><a class="tel" href="tel:+38-096-111-11-11" >+38 096 111 11 11</a></li>
+    <div class="container header">
+        <nav class="nav">
+            <a class="nav-logo" href="">Web<span class="nav-logo-half">Studio</span>
+            </a>
+            <ul class="nav-list">
+                <li class="nav-item"><a class="current nav-pages" href="./index.html">Студия</a></li>
+                <li class="nav-item"><a class="nav-pages" href="./portfolio.html">Портфолио</a></li>
+                <li class="nav-item"><a class="nav-pages" href="">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="contacts">
+            <ul class="contacts-item">
+                <li class="contacts-list"><a class="link" href="mailto:info@devstudio.com">
+                        <svg class="contacts-icon" width="16" height="12">
+                            <use href="./img/icons.svg#envelope"></use>
+                        </svg>info@devstudio.com</a>
+                </li>
+                <li class="contacts-list"><a class="tel" href="tel:+38-096-111-11-11">
+                        <svg class="contacts-icon" width="10" height="16">
+                            <use href="./img/icons.svg#smartphone"></use>
+                        </svg>+38 096 111 11 11</a>
+                </li>
             </ul>
         </div>
+    
+    </div>
     </header>
     <main>
             
@@ -124,16 +134,52 @@
     <!--Футер-->
 
     <footer class="footer portfolio">
-        <div class="container">
-            <a class="nav-logo-footer" href="">Web<span class="nav-logo-half">Studio</span>
-            </a>
-            <address class="footter-address">
-                <ul class="contacts-footer">
-                    <li class="address">г. Киев, пр-т Леси Украинки, 26</li>
-                    <li><a class="footer-link" href="mailto:info@example.com">info@example.com</a></li>
-                    <li><a class="footer-tel" href="tel:+38-099-111-11-11">+38 099 111 11 11</a></li>
-                </ul>
-            </address>
+        <div class="container container-fotter">
+            <div class="logo-footer">
+                <a class="nav-logo-footer" href="">Web<span class="nav-logo-half-footer">Studio</span>
+                </a>
+                <address class="footter-address">
+                    <ul class="contacts-footer">
+                        <li class="address">г. Киев, пр-т Леси Украинки, 26</li>
+                        <li><a class="footer-link" href="mailto:info@example.com">info@example.com</a></li>
+                        <li><a class="footer-tel" href="tel:+38-099-111-11-11">+38 099 111 11 11</a></li>
+                    </ul>
+                </address>
+            </div>
+        
+            <div class="social">
+                <h2 class="join">ПРИСОЕДИНЯЙТЕСЬ
+                    <div class="socials-link-container">
+        
+                        <ul class="socials-link-item">
+                            <li class="socials-link-list">
+                                <a class="socials-link-footer" href=""></a>
+                                <svg class="socials-link-icon" width="20" height="20">
+                                    <use href="./img/icons.svg#instagram"></use>
+                                </svg>
+                            </li>
+                            <li class="socials-link-list">
+                                <a class="socials-link-footer" href=""></a>
+                                <svg class="socials-link-icon" width="20" height="20">
+                                    <use href="./img/icons.svg#twitter"></use>
+                                </svg>
+                            </li>
+                            <li class="socials-link-list">
+                                <a class="socials-link-footer" href=""></a>
+                                <svg class="socials-link-icon" width="20" height="20">
+                                    <use href="./img/icons.svg#facebook"></use>
+                                </svg>
+                            </li>
+                            <li class="socials-link-list">
+                                <a class="socials-link-footer" href=""></a>
+                                <svg class="socials-link-icon" width="20" height="20">
+                                    <use href="./img/icons.svg#linkedin"></use>
+                                </svg>
+                            </li>
+                        </ul>
+                    </div>
+                </h2>
+            </div>
         </div>
     </footer>
 </body>
