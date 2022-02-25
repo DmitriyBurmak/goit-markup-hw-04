@@ -521,10 +521,12 @@ p {
 }
 
 .social {
-  display: flex;
+  display: block;
+  padding-top: 36px;
 }
 
 .join {
+  color: var(--primary-white-color);
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
