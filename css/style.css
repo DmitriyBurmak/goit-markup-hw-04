@@ -371,10 +371,12 @@ img {
   gap: 48px 24px;
 }
 .portfolio-list-item {
+  overflow: hidden;
   flex-basis: calc((100% - 48px) / 3);
   transition-property: box-shadow, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
 }
 
 .portfolio-list-item:hover,
@@ -402,15 +404,27 @@ img {
   color: #434455;
 }
 
+.overlay-link:hover .overlay,
+.overlay-link:focus .overlay {
+  transform: translateY(0);
+}
+
 .overlay {
+  background-color: #4d5ae5;
+  height: 300px;
+
   position: absolute;
+  transform: translateY(200%);
   top: 0;
   left: 0;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .overlay-text {
   color: #f4f4fd;
+  padding: 40px 32px 164px 32px;
 }
+
 /* #endregion */
 
 /* #region Footer */
